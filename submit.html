@@ -3,73 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ChallangeVerse</title>
+    <title>ChallengeVerse | Submit Challenge</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<header>
+    <nav class="navbar">
+        <h2>🎯 ChallengeVerse</h2>
 
-       <header>
-                <ul class="nav-links">
-                   <li><a href="index.html">Home</a></li>
-                     <li><a href="categories.html">Categories</a></li>
-                       <li><a href="submit.html">Submit</a></li>
-                 </ul>
-    </header>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="submit.html" class="active">Submit</a></li>
+        </ul>
+    </nav>
+</header>
 
-    <section class="page-title">
+<section class="page-title">
+    <h1>Submit Your Own Challenge</h1>
+    <p>Share your creative challenge with everyone!</p>
+</section>
 
-               <h1>Submit Your Own Challange</h1>
+<section class="form-section">
 
-                <p>Share your creative challange with every Hack Clubber!!</p>
-    </section>
+    <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600" alt="Submit Challenge">
 
+    <form id="challengeForm">
 
-    <section class="form-section">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" placeholder="Enter your name">
 
-           <img src="images/1.png" alt="One Images">
+        <label for="category">Category</label>
+        <select id="category">
+            <option value="">Choose Category</option>
+            <option>Coding</option>
+            <option>Study</option>
+            <option>Fitness</option>
+            <option>Fun</option>
+        </select>
 
-              <form  id="challengeForm">
+        <label for="challenge">Your Challenge</label>
+        <textarea id="challenge" rows="5" placeholder="Write your challenge here..."></textarea>
 
-                    <label for="name">Your Name:</label>
-                    <input type="text" id="name" placeholder="Enter Your Name Hacker">
+        <button type="submit">
+            Submit Challenge
+        </button>
 
-            <label for="category">Category</label>
+    </form>
 
-            <select id="category">
+    <p id="message"></p>
 
-              <option>Choose Caregory...</option>
-              <option>Coding</option>
-              <option>Study</option>
-              <option>Fitness</option>
-              <option>Walk</option>
-            </select>
+</section>
 
+<section class="cards">
 
-            <label for="challenge">Your Challange Mate....</label>
-            <textarea id="challange" rows="5" placeholder="Write Your Challange Here..."></textarea>
+    <div class="card">
+        <h3> Example</h3>
+        <p>Create a simple calculator using HTML, CSS and JavaScript.</p>
+    </div>
 
-            <button type="submit">Submit Challange</button>
-        </form>
-        <p id="message"></p>
-    </section>
+    <div class="card">
+        <h3> Goal</h3>
+        <p>Your challenge should be fun, creative and easy to understand.</p>
+    </div>
 
-    <section id="cards">
-           <div class="card">
-                <h3>Example</h3>
-               <p>Create a simple website....</p>
-        </div>
+    <div class="card">
+        <h3> Tip</h3>
+        <p>Keep challenges short so everyone can enjoy completing them.</p>
+    </div>
 
-         <div class="card">
-              <p>You can do it mate</p>
-         </div>
-    </section>
+</section>
 
+<footer>
+    <p>Copy Himanshuu Hereeee Guyssssssssssssss</p>
+</footer>
 
-    
+<script src="script.js"></script>
 
-    <footer>
-        <p>&copy You are going to do that brooo(Himanshu Hereeeeeeeeeeee)</p>
-    </footer>
 </body>
 </html>
