@@ -1,0 +1,353 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+
+}
+
+body{
+    background: #cf6666;
+    color: #dfd3d3;
+    line-height: 1.6;
+
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #4f46e5;
+    padding: 15px 40px;
+    flex-wrap: wrap;
+
+}
+
+.navbar h2{
+    color: white;
+   
+}
+
+ .nav-links{
+    display: flex;
+    list-style: none;
+
+ }
+
+ .nav-links li{
+    margin: 20px;
+
+ }
+
+ .nav-links a{
+    color: White ;
+    text-decoration: none;
+    font-weight: bold;
+    transition: .3s;
+    
+
+ }
+
+ .nav-links a:hover, .active{
+    color: rgb(16, 213, 55);
+
+ }
+
+ .hero{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 20px;
+
+
+ }
+
+ .hero-text{
+    max-width: 500px;
+
+ }
+
+ .hero-text h1{
+    font-size: 42px;
+    color: #3d34ea;
+    margin-bottom: 16px;
+
+    
+ }
+ .hero-text p{
+   margin-bottom: 20px;
+
+    
+ }
+ .hero-image img{
+    width: 380px;
+    max-width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px gray;
+
+
+ }
+
+ button{
+    background: #ff9800;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: .3s;
+
+ }
+
+ button:hover{
+    background: #ff5722;
+    transform:scale(1.05);
+ }
+ .featured{
+    text-align: center;
+    padding: 40px 20px;
+ }
+
+ .challange-card{
+    background: white;
+    width: 350px;
+    max-width: 90%;
+    margin: 20px auro; padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 15px lightgray;
+    animation:fade .8s;
+
+    
+ }
+
+ .why{
+   padding: 40px 20px;
+   text-align: center;
+
+ }
+
+ .cards{
+   display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+    margin-top:25px;
+
+ }
+
+ .card{
+   width: 250px;
+   background: white;
+   padding: 20px;
+   border-radius: 15px;
+   box-shadow: 0 5px 15px lightgray;
+ }
+
+ .card:hover{
+   transform: translateY(-8px);
+   
+
+ }
+
+ .card img{
+   width: 100%;
+   height: 160px;
+   object-fit: cover;
+   border-radius: 10px;
+   margin-bottom: 15px;
+
+
+ }
+.card h3{
+   color: #4f46e5;
+   margin-bottom: 10px;
+
+}
+
+.steps{
+   text-align: center;
+   padding: 40px 20px;
+
+}
+
+.steps ol{
+    display:inline-block;
+    text-align:left;
+    margin-top:20px;
+}
+
+.steps li{
+    margin:10px 0;
+}
+
+.page-title{
+    text-align:center;
+    padding:40px 20px;
+}
+
+.page-title h1{
+    color:#4f46e5;
+    margin-bottom:10px;
+}
+
+.search-area{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.search-area input{
+    width:320px;
+    max-width:90%;
+    padding:12px;
+    border:2px solid #4f46e5;
+    border-radius:8px;
+    font-size:16px;
+}
+
+.form-section{
+   width: 90%;
+   max-width: 700px;
+   margin: 40px auto;
+   background: white;
+   padding: 30px;
+   border-radius: 15px;
+   box-shadow: 0 5px 15px lightgray;
+
+}
+
+.form-section img{
+   width: 100%;
+   border-radius:10px;
+   margin-bottom:20px ;
+}
+form{
+   display: flex;
+   flex-direction: column;
+
+}
+form label{
+   margin-top: 15px;
+   font-weight: bold;
+}
+
+form input, form select, form textarea{
+   margin-top: 8px;
+   padding: 12px;
+   border: 1px solid #ccc;
+   border-radius: 8px;
+   font-size: 16px;
+   outline: none;
+
+}
+form input:focus,
+form select:focus,
+form textarea:focus{
+    border:2px solid #4f46e5;
+}
+
+form button{
+   margin-top: 20px;
+
+}
+
+#message{
+   margin-top: 20px;
+   text-align: center;
+   font-size: 18px;
+   font-weight: bold;
+   color: green;
+
+}
+
+footer{
+   background:#4f46e5 ;
+   color: white;
+   text-align: center;
+   padding: 18px;
+   margin-top: 40px;
+
+
+}
+
+.challange{
+   margin: 8px 0;
+
+}
+.challange:hover{
+   color: #ff5722;
+   cursor: pointer;
+}
+
+@keyframes fade{
+   from{
+      opacity: 0;
+      transform: translateY(20px);
+
+   }
+
+   to{
+      opacity: 1;
+      transform: translateY(0);
+   }
+}
+
+@media(max-width:900px){
+   .hero{
+      flex-direction: column;
+      text-align: center;
+
+   }
+
+   .hero-image{
+      margin-top: 30px;
+
+   }
+    .cards{
+      flex-direction: column;
+      align-items: center;
+
+    }
+}
+
+@media(max-width:600px){
+   .navbar{
+      flex-direction: column;
+
+   }
+   .nav-links{
+      margin-top: 15px;
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .nav-links li{
+      margin: 8px 0;
+
+   }
+   .hero-text h1{
+      font-size: 30px;
+
+
+   }
+
+   .challange-card{
+      width: 95%;
+
+   }
+
+   .search-area input{
+      width: 90%;
+   }
+
+   .form-section{
+      width: 95%;
+   }
+   button{
+      width: 100%;
+   }
+}
+
+ 
+
